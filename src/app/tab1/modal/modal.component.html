@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Bank details
+      <ion-icon
+        name="close"
+        style="float: right;font-size:24px;"
+        (click)="dismiss()"
+      ></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item lines="none">
+      <ion-icon name="business"></ion-icon> {{ bank_name }}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="checkbox-outline"></ion-icon> IFSC Code: {{ ifsc }}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="albums"></ion-icon> {{ branch }}
+    </ion-item>
+    <ion-item lines="none">
+      <ion-icon name="pin"></ion-icon> {{ address }}
+    </ion-item>
+  </ion-list>
+</ion-content>
