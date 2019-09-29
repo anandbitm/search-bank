@@ -47,7 +47,7 @@ export class Tab1Page {
       console.log("len:", this.banks.length);
       this.counter = this.counter + 10;
       this.banks = this.banksMaster.slice(0, this.counter);
-      if (this.banks.length == this.masterData.length) {
+      if (this.banks.length == this.banksMaster.length) {
         event.target.disabled = true;
       }
     }, 500);
